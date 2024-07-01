@@ -1,0 +1,38 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Sentiment Survey Builder</h1>
+        <div class="mode-toggle">
+            <label for="mode-toggle">Dark Mode:</label>
+            <input type="checkbox" id="mode-toggle">
+        </div>
+        <div class="editor-container">
+            <div id="designer">
+                <h2>Designer</h2>
+                <div id="toolbar">
+                    <button id="add-checkbox" draggable="true" data-type="checkbox">Add Checkbox</button>
+                    <button id="add-comment" draggable="true" data-type="comment">Add Comment</button>
+                </div>
+            </div>
+            <div id="workspace">
+                <h2>Workspace</h2>
+                <div id="survey-container"></div>
+            </div>
+            <div class="json-container">
+                <h2>JSON Editor</h2>
+                <textarea id="json-output" readonly></textarea>
+            </div>
+        </div>
+        <footer>
+            <p>Made with ❤️ by Codequeentosin</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
